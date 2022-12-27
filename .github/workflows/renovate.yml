@@ -19,7 +19,7 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.GH_PUSH_TOKEN }}
-      - uses: actions/cache@9b0c1fce7a93df8e3bb8926b0d6e9d89e92f20a7 # tag=v3
+      - uses: actions/cache@4723a57e26efda3a62cbde1812113b730952852d # tag=v3
         with:
           path: /home/vscode/.cache/_grpc_gateway_bazel
           key: v1-bazel-cache-${{ hashFiles('repositories.bzl') }}
